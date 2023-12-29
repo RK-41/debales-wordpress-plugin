@@ -1,4 +1,19 @@
 <?php
+/*
+ * Plugin Name:       Debales Chatbot
+ * Plugin URI:        https://debales.ai/
+ * Description:       This plugin will help you to integrate Debales Chatbot in your website.
+ * Version:           0.1.0
+ * Requires at least: 5.2
+ * Requires PHP:      7.2
+ * Author:            Debales AI
+ * Author URI:        https://debales.ai/
+ * License:           Custom
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Update URI:        https://debales.ai/
+ * Text Domain:       my-basics-plugin
+ * Domain Path:       /languages
+ */
 
 define('chatbox_api', 'https://saas.brainlox.com');
 $api_key = get_option('debales_chatbot_bot_id');
