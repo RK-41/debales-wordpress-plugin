@@ -19,6 +19,6 @@ if __name__ == "__main__":
         manifest = json.load(f)
 
     shutil.copy(
-        path.join("frontend/dist/", manifest["index.html"]["file"]),
+        path.join(FRONTEND_DIR, "dist/", manifest["index.html"]["file"]),
         path.join(PLUGIN_SRC_DIR, "debales-ai-assistant.min.js")
     )
