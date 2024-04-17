@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@debales-ai/ai-assistant':
-    specifier: ^0.3.0
-    version: 0.3.0(@types/react@18.2.43)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.8)
+    specifier: ^0.3.1
+    version: 0.3.1(@types/react@18.2.43)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.8)
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -278,8 +278,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@debales-ai/ai-assistant@0.3.0(@types/react@18.2.43)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.8):
-    resolution: {integrity: sha512-RCX0/9r/gXXlln0ip0scUdLwNy8+zF9wNiZaKWg9wgKIyOH95t7cmYzLxk3vwgiWPVPN3imRy5Bk6jXS97YsUg==}
+  /@debales-ai/ai-assistant@0.3.1(@types/react@18.2.43)(react-dom@18.2.0)(react@18.2.0)(styled-components@6.1.8):
+    resolution: {integrity: sha512-8sLCycq/ErFf6yMOkbxdrDiSo9NJEDDz5V9u2p+WVF/sHSR9QXCQf+FRnJGyJRCrBsfoGbHjUU724RJ4O+21HQ==}
     engines: {node: '>=10'}
     peerDependencies:
       react: '>=16'
