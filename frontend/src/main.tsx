@@ -17,10 +17,12 @@ import { Chatbot } from "@debales-ai/ai-assistant";
     );
     return;
   }
+  // find the botId in the element's bot-name attribute
+  const botName = element.getAttribute("data-bot-name");
 
   ReactDOM.createRoot(element).render(
     <React.StrictMode>
-      <Chatbot botId={botId} />
+      <Chatbot botId={botId} botName={botName ?? undefined }/>
     </React.StrictMode>
   );
 })();

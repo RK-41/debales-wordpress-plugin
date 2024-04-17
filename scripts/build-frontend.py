@@ -13,7 +13,7 @@ if __name__ == "__main__":
         ["npm", "run", "build"],
         cwd=FRONTEND_DIR,
         check=True,
-        shell=False,
+        shell=True,
     )
 
     # read ./frontend/dist/.vite/manifest.json
