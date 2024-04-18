@@ -19,10 +19,11 @@ import { Chatbot } from "@debales-ai/ai-assistant";
   }
   // find the botId in the element's bot-name attribute
   const botName = element.getAttribute("data-bot-name");
+  const botNameColor = element.getAttribute("data-bot-name-color");
 
   ReactDOM.createRoot(element).render(
     <React.StrictMode>
-      <Chatbot botId={botId} botName={botName ?? undefined }/>
+      <Chatbot botId={botId} botName={botName ?? undefined } botNameColor={botNameColor ?? undefined}/>
     </React.StrictMode>
   );
 })();
