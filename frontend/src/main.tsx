@@ -23,7 +23,11 @@ import { Chatbot } from "@debales-ai/ai-assistant";
 
   ReactDOM.createRoot(element).render(
     <React.StrictMode>
-      <Chatbot botId={botId} botName={botName ?? undefined } botNameColor={botNameColor ?? undefined}/>
+      <Chatbot
+        botId={botId}
+        botName={botName ?? undefined}
+        botNameColor={botNameColor ?? undefined}
+      />
     </React.StrictMode>
   );
 })();
