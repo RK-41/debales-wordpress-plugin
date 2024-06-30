@@ -1,14 +1,28 @@
+/*
+Debales AI Assistant is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+any later version.
+
+Debales AI Assistant is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Debales AI Assistant. If not, see https://www.gnu.org/licenses/gpl-2.0.html
+*/
+
 <?php
 /*
  * Plugin Name:       Debales AI Assistant
  * Plugin URI:        https://debales.ai/
  * Description:       This plugin will help you to integrate Debales AI Assistant Chatbot into your website.
- * Version:           0.1.0
+ * Version:           0.5.2
  * Requires at least: 5.2
  * Requires PHP:      7.2
  * Author:            Debales
- * Author URI:        https://debales.ai/
- * License:           Custom
+ * License:           GPLv2 or later
  * Update URI:        https://debales.ai/
  */
 
