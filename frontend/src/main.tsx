@@ -25,8 +25,8 @@ import { Chatbot } from "@debales-ai/ai-assistant";
     <React.StrictMode>
       <Chatbot
         botId={botId}
-        botName={botName ?? undefined}
-        botNameColor={botNameColor ?? undefined}
+        botName={botName || undefined}
+        botNameColor={botNameColor || undefined}
       />
     </React.StrictMode>
   );
