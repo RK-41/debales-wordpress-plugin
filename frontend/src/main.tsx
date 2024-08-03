@@ -20,7 +20,13 @@ import { Chatbot } from "@debales-ai/ai-assistant";
   // find the botId in the element's bot-name attribute
   const botName = element.getAttribute("data-bot-name");
   const botNameColor = element.getAttribute("data-bot-name-color");
-
+function injectSwiperStyles() {
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css';
+  document.head.appendChild(link);
+}
+injectSwiperStyles();
   ReactDOM.createRoot(element).render(
     <React.StrictMode>
       <Chatbot
@@ -28,6 +34,7 @@ import { Chatbot } from "@debales-ai/ai-assistant";
         botName={botName || undefined}
         botNameColor={botNameColor || undefined}
       />
+      
     </React.StrictMode>
   );
 })();
