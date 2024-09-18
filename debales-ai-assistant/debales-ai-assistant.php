@@ -76,10 +76,9 @@ function addchatbotinfooter()
 {
 
     if (api_key != '') {
-
+    wp_enqueue_script('debales-ai-assistant', plugin_dir_url(__DIR__) . 'debales-ai-assistant/debales-ai-assistant.min.js', array(), '1.9.3-0', true);
     ?>
         <div id="debales-ai-assistant" data-bot-id="<?php echo api_key?>"></div>
-        <script type="module" crossorigin src='<?php echo plugin_dir_url(__DIR__); ?>debales-ai-assistant/debales-ai-assistant.min.js'></script>
 <?php
     }
 }
