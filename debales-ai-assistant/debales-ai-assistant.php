@@ -24,10 +24,10 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-define('chatbox_api', 'https://saas.brainlox.com');
-$api_key = get_option('debales_chatbot_bot_id');
+define('debales_chatbot_api_url', 'https://saas.brainlox.com');
+$debales_chatbot_api_key = get_option('debales_chatbot_bot_id');
 
-define('api_key', $api_key);
+define('debales_chatbot_api_key', $debales_chatbot_api_key);
 
 
 function debales_chatbot_settings_page()
@@ -74,19 +74,19 @@ function debales_chatbot_register_settings()
 add_action('admin_init', 'debales_chatbot_register_settings');
 
 
-function addchatbotinfooter()
+function debales_chatbot_add_to_footer()
 {
 
-    if (api_key != '') {
+    if (debales_chatbot_api_key != '') {
     wp_enqueue_script('debales-ai-assistant', plugin_dir_url(__DIR__) . 'debales-ai-assistant/debales-ai-assistant.min.js', array(), '1.9.3-0', true);
     ?>
-        <div id="debales-ai-assistant" data-bot-id="<?php echo esc_attr(api_key); ?>"></div>
+        <div id="debales-ai-assistant" data-bot-id="<?php echo esc_attr(debales_chatbot_api_key); ?>"></div>
 <?php
     }
 }
 
 
-add_action('wp_footer', 'addchatbotinfooter');
+add_action('wp_footer', 'debales_chatbot_add_to_footer');
 
 
 ?>
