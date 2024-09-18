@@ -19,7 +19,6 @@
  * Requires PHP:      7.2
  * Author:            Debales
  * License:           GPLv2 or later
- * Update URI:        https://debales.ai/
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
