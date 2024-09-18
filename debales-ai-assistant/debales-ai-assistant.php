@@ -22,6 +22,8 @@
  * Update URI:        https://debales.ai/
  */
 
+if ( ! defined( 'ABSPATH' ) ) exit;
+
 define('chatbox_api', 'https://saas.brainlox.com');
 $api_key = get_option('debales_chatbot_bot_id');
 
