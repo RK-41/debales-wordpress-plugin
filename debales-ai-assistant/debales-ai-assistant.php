@@ -24,7 +24,7 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-define('debales_chatbot_api_url', 'https://saas.brainlox.com');
+define('debales_chatbot_api_url', 'https://debales.ai');
 $debales_chatbot_api_key = get_option('debales_chatbot_bot_id');
 
 define('debales_chatbot_api_key', $debales_chatbot_api_key);
