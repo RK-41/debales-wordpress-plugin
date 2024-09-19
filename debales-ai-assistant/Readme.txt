@@ -7,7 +7,11 @@ Stable tag: 1.9.3-0
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Required Service: You must have an account with Debales AI. For getting the Bot ID, sign up at Debales AI and create a new project.
+Required Service: 
+1.You must have an account with Debales AI. For getting the Bot ID, sign up at Debales AI and create a new project.
+2.Debales AI API: The plugin relies on the Debales AI API to handle user queries and process responses in real-time.
+3.Server URL: The plugin communicates with `https://debales.ai` for API requests and response processing.
+Example: The images are all dynamic and can be changed by the user.
 
 Short Description
 Easily integrate the Debales AI-powered chatbot into your WordPress site for real-time, intelligent user interactions.
