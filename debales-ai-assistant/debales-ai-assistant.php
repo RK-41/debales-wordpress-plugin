@@ -12,7 +12,7 @@
 * 
 * You should have received a copy of the GNU General Public License
 * along with Debales AI Assistant. If not, see https://www.gnu.org/licenses/gpl-2.0.html
- * Plugin Name:       Debales AI Assistant test
+ * Plugin Name:       Debales AI Assistant
  * Plugin URI:        https://debales.ai/
  * Description:       This plugin will help you to integrate Debales AI Assistant Chatbot into your website.
  * Version:           1.8.0
