@@ -67,7 +67,8 @@ function debales_chatbot_register_settings()
 {
     register_setting(
         'debales-chatbot-settings-group',
-        'debales_chatbot_bot_id'
+        'debales_chatbot_bot_id',
+        'sanitize_text_field'
     );
 }
 add_action('admin_init', 'debales_chatbot_register_settings');
