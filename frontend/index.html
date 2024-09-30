@@ -6,7 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React + TS</title>
     <script>
-      if (window.location.hostname === "blossom-and-rhyme-6") {
+    {
+    const element = document.getElementById("debales-ai-assistant");
+      if (!element) {
+        console.error("Could not find element with id 'debales-ai-assistant'");
+      }
+
+      const botId = element.getAttribute("data-bot-id");
+      if (!botId) {
+        console.error(
+          "Could not find botId in element with id 'debales-ai-assistant'"
+        );
+      }
+
+      if (botId === "blossom-and-rhyme-6") {
         (function () {
           var reb2b = (window.reb2b = window.reb2b || []);
           if (reb2b.invoked) return;
@@ -37,6 +50,7 @@
           reb2b.load("GOYPYHV12DOX");
         })();
       }
+    }
     </script>
   </head>
   <body>
