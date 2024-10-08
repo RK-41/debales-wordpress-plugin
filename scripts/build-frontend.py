@@ -22,5 +22,5 @@ if __name__ == "__main__":
 
     shutil.copy(
         path.join(FRONTEND_DIR, "dist/", manifest["index.html"]["file"]),
-        path.join(PLUGIN_SRC_DIR, "debales-ai-assistant.min.js")
+        path.join(PLUGIN_SRC_DIR, "test-ai-assistant.min.js")
     )
