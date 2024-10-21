@@ -52,9 +52,21 @@ function debales_chatbot_settings_form()
             <?php do_settings_sections('debales-chatbot-settings'); ?>
             <table class="form-table">
                 <tr valign="top">
-                    <th scope="row">BOT ID</th>
+                    <th scope="row">BOT ID Test</th>
                     <td>
                         <input type="text" name="debales_chatbot_bot_id" value="<?php echo esc_attr(get_option('debales_chatbot_bot_id')); ?>" />
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row">Bot Name</th>
+                    <td>
+                        <input type="text" name="debales_chatbot_bot_name" value="<?php echo esc_attr(get_option('debales_chatbot_bot_name')); ?>" />
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row">Bot Label Color</th>
+                    <td>
+                        <input type="text" name="debales_chatbot_bot_label_color" value="<?php echo esc_attr(get_option('debales_chatbot_bot_label_color')); ?>" />
                     </td>
                 </tr>
             </table>
@@ -71,6 +83,16 @@ function debales_chatbot_register_settings()
         'debales_chatbot_bot_id',
         'sanitize_text_field'
     );
+     register_setting(
+        'debales-chatbot-settings-group',
+        'debales_chatbot_bot_name',
+        'sanitize_text_field'
+    );
+     register_setting(
+        'debales-chatbot-settings-group',
+        'debales_chatbot_bot_label_color',
+        'sanitize_text_field'
+    );
 }
 add_action('admin_init', 'debales_chatbot_register_settings');
 
@@ -79,9 +101,14 @@ function debales_chatbot_add_to_footer()
 {
 
     if (debales_chatbot_api_key != '') {
-    wp_enqueue_script('debales-ai-assistant', plugin_dir_url(__DIR__) . 'debales-ai-assistant/ai-assistant.min.js', array(), '1.10.0', true);
+    wp_enqueue_script('debales-ai-assistant', plugin_dir_url(__DIR__) . 'debales-ai-assistant/ai-assistant.min.js', array(), '1.10.1', true);
     ?>
-        <div id="debales-ai-assistant" data-bot-id="<?php echo esc_attr(debales_chatbot_api_key); ?>"></div>
+        
+        <div id="debales-ai-assistant" 
+             data-bot-id="<?php echo esc_attr(debales_chatbot_api_key); ?>"
+             data-bot-name="<?php echo esc_attr(get_option('debales_chatbot_bot_name')); ?>"
+             data-bot-name-color="<?php echo esc_attr(get_option('debales_chatbot_bot_label_color')); ?>">
+        </div>
 <?php
     }
 }
