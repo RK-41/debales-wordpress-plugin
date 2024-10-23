@@ -15,7 +15,7 @@
  * Plugin Name:       Debales AI Assistant
  * Plugin URI:        https://debales.ai/
  * Description:       This plugin will help you to integrate Debales AI Assistant Chatbot into your website.
- * Version:           1.10.1
+ * Version:           1.10.2
  * Requires at least: 5.2
  * Requires PHP:      7.2
  * Author:            Debales
@@ -52,7 +52,7 @@ function debales_chatbot_settings_form()
             <?php do_settings_sections('debales-chatbot-settings'); ?>
             <table class="form-table">
                 <tr valign="top">
-                    <th scope="row">BOT ID Test</th>
+                    <th scope="row">BOT ID</th>
                     <td>
                         <input type="text" name="debales_chatbot_bot_id" value="<?php echo esc_attr(get_option('debales_chatbot_bot_id')); ?>" />
                     </td>
