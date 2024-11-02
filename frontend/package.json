@@ -12,7 +12,8 @@
   "dependencies": {
     "@debales-ai/ai-assistant": "^1.10.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "swiper": "^11.1.14"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
