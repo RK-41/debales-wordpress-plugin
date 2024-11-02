@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
     # then zip the plugin at ../debales-ai-assistant
     plugin_src_dir = path.join(path.dirname(__file__), '..', 'debales-ai-assistant')
-    plugin_zip_path = path.join(path.dirname(__file__), '..', 'test-debales-ai-assistant.zip')
+    plugin_zip_path = path.join(path.dirname(__file__), '..', 'debales-ai-assistant.zip')
 
     with zipfile.ZipFile(plugin_zip_path, 'w') as plugin_zip:
         for root, dirs, files in os.walk(plugin_src_dir):
