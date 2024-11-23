@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Chatbot } from "@debales-ai/ai-assistant";
-
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 (function () {
   const element = document.getElementById("debales-ai-assistant");
