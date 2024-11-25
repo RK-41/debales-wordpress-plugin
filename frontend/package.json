@@ -10,9 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@debales-ai/ai-assistant": "^1.10.4",
+    "@debales-ai/ai-assistant": "^1.10.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "swiper": "^11.1.15"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
