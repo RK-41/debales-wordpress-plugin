@@ -2,8 +2,8 @@
 Contributors: aryandebales
 Tags: AI Assistant,Debales,Chatbot
 Requires at least: 5.2
-Tested up to: 6.6
-Stable tag: 1.10.9
+Tested up to: 6.7
+Stable tag: 1.10.10
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -25,4 +25,4 @@ Debales AI Assistant is an intelligent chatbot integration service for WordPress
 3.Server URL: The plugin communicates with `https://debales.ai` for API requests and response processing. Example: The images are all dynamic and can be changed by the user.
 
 
-Source Code: https://github.com/Brainlox-AI/debales-wordpress-plugin
+Source Code: https://github.com/DebalesAI/debales-wordpress-plugin
