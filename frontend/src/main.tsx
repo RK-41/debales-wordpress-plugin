@@ -1,8 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
 import { Chatbot } from "@debales-ai/ai-assistant";
-import 'swiper/css';
-import 'swiper/css/navigation';
+import ReactDOM from "react-dom/client";
 
 (function () {
   const element = document.getElementById("debales-ai-assistant");
@@ -22,10 +19,11 @@ import 'swiper/css/navigation';
   // find the botId in the element's bot-name attribute
   const botName = element.getAttribute("data-bot-name");
   const botNameColor = element.getAttribute("data-bot-name-color");
- function injectReb2bScript() {
-  const script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.textContent = `
+  const shadowRoot = element.attachShadow({ mode: "open" });
+  function injectReb2bScript() {
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.textContent = `
     (function () {
           var reb2b = (window.reb2b = window.reb2b || []);
           if (reb2b.invoked) return;
@@ -57,20 +55,17 @@ import 'swiper/css/navigation';
         })();
   `;
 
-  // Append the script to the head
-  document.head.appendChild(script);
-}
-  if(botId === "blossom-and-rhyme-6"){
+    // Append the script to the head
+    document.head.appendChild(script);
+  }
+  if (botId === "blossom-and-rhyme-6") {
     injectReb2bScript();
   }
-  ReactDOM.createRoot(element).render(
-    <React.StrictMode>
-      <Chatbot
-        botId={botId}
-        botName={botName || undefined}
-        botNameColor={botNameColor || undefined}
-      />
-      
-    </React.StrictMode>
+  ReactDOM.createRoot(shadowRoot).render(
+    <Chatbot
+      botId={botId}
+      botName={botName || undefined}
+      botNameColor={botNameColor || undefined}
+    />
   );
 })();
