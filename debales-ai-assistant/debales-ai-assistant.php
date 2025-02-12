@@ -15,7 +15,7 @@
  * Plugin Name:       Debales AI Assistant
  * Plugin URI:        https://debales.ai/
  * Description:       This plugin will help you to integrate Debales AI Assistant Chatbot into your website.
- * Version:           1.10.73
+ * Version:           1.10.74
  * Requires at least: 5.2
  * Requires PHP:      7.2
  * Author:            Debales
