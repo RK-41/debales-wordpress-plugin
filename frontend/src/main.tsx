@@ -16,6 +16,19 @@ import ReactDOM from "react-dom/client";
     );
     return;
   }
+  const isGtkCateringPage = () => {
+    return window.location.href.includes("www.hellogtk.com/catering");
+  };
+
+  // Don't render anything if it's GTK-Restaurant bot on the catering page
+  if (botId === "GTK-Restaurant" && isGtkCateringPage()) {
+    const elementToRemove = document.querySelector(`[data-bot-id="${botId}"]`);
+    if (elementToRemove) {
+      elementToRemove.remove();
+    }
+    return;
+  }
+
   element.style.display = "block";
   element.style.position = "absolute";
   element.style.bottom = "0";
