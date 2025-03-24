@@ -3,7 +3,7 @@ Contributors: aryandebales
 Tags: AI Assistant,Debales,Chatbot
 Requires at least: 5.2
 Tested up to: 6.6
-Stable tag: 1.11.78-0
+Stable tag: 1.11.79-0
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
