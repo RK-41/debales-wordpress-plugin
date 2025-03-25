@@ -84,7 +84,7 @@ function debales_chatbot_add_to_footer()
 {
 
     if (debales_chatbot_api_key != '') {
-    wp_enqueue_script('debales-ai-assistant', plugin_dir_url(__DIR__) . 'debales-ai-assistant/ai-assistant.min.js', array(), '1.10.6', true);
+    wp_enqueue_script('debales-ai-assistant', 'https://debales.ai/plugin-assets/ai-assistant.min.js', array(), '1.10.6', true);
     ?>
         
         <div id="debales-ai-assistant" 
