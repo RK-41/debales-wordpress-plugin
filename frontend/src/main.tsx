@@ -16,13 +16,26 @@ import ReactDOM from "react-dom/client";
     );
     return;
   }
+  // const isGtkCateringPage = () => {
+  //   return window.location.href.includes("www.hellogtk.com/catering");
+  // };
+
+  // // Don't render anything if it's GTK-Restaurant bot on the catering page
+  // if (botId === "GTK-Restaurant" && isGtkCateringPage()) {
+  //   const elementToRemove = document.querySelector(`[data-bot-id="${botId}"]`);
+  //   if (elementToRemove) {
+  //     elementToRemove.remove();
+  //   }
+  //   return;
+  // }
+
   element.style.display = "block";
   element.style.position = "absolute";
   element.style.bottom = "0";
   element.style.right = "0";
   element.style.width = "0";
   element.style.height = "0";
-  element.style.zIndex = "2147483647";
+  element.style.zIndex = "2031483602";
   // find the botId in the element's bot-name attribute
   const botName = element.getAttribute("data-bot-name");
   const botNameColor = element.getAttribute("data-bot-name-color");
