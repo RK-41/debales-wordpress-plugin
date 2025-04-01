@@ -35,7 +35,7 @@ import ReactDOM from "react-dom/client";
   element.style.right = "0";
   element.style.width = "0";
   element.style.height = "0";
-  element.style.zIndex = "2147483647";
+  element.style.zIndex = "2031483602";
   // find the botId in the element's bot-name attribute
   const botName = element.getAttribute("data-bot-name");
   const botNameColor = element.getAttribute("data-bot-name-color");
